@@ -15,6 +15,16 @@ public class Main {
         return reversed.equals(String.valueOf(number));
     }
 
-    public
+    public static boolean isPerfectNumber(int num){
+
+        if(num<0)
+            return false;
+        int total=0;
+        for (int i=1; i<= num/2; i++){
+            if (num % i == 0) total+=i ;
+        }
+        return num == total;
+    }
+
 
 }
